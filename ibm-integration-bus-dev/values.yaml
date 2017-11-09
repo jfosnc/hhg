@@ -8,7 +8,7 @@
 #  IBM Corporation - initial API and implementation
 ###############################################################################
 # license must be set to "accept" in order to accept the terms of the IBM license
-license: "accepted"
+license: "accept"
 image:
   # repository is the container repository to use, which defaults to IIB docker registry hub image
   repository: ibmcom/iib
