@@ -36,18 +36,18 @@ The following table lists the configurable parameters of the `ibm-integration-bu
 
 | Parameter                        | Description                                     | Default                                                    |
 | -------------------------------- | ----------------------------------------------- | ---------------------------------------------------------- |
-| `license`                        | Set this to accept the terms of the IBM license | `Not accepted`                                     |
-| `image.repository`               | Image full name including repository            | `ibmcom/iib`                                                |
-| `image.tag`                      | Image tag                                       | `10.0.0.10`                                                        |
+| `license`                        | Set this to accept the terms of the IBM license | `accept`                                     |
+| `image.repository`               | Image full name including repository            | `*tokenized*`                                                |
+| `image.tag`                      | Image tag                                       | `*tokenized*`                                                        |
 | `image.pullPolicy`               | Image pull policy                               | `IfNotPresent`                                             |
 | `image.pullSecret`               | Image pull secret, if you are using a private Docker registry | `nil`                                        |
-| `service.type`                   | Kubernetes service type for exposing ports       | `NodePort`                                  |
-| `resources.limits.cpu`          | Kubernetes CPU limit for the IIB container | `2`                                                   |
-| `resources.limits.memory`       | Kubernetes memory limit for the IIB container | `2048Mi`                                              |
-| `resources.requests.cpu`        | Kubernetes CPU request for the IIB container | `1`                                                 |
-| `resources.requests.memory`     | Kubernetes memory request for the IIB container | `512Mi`                                            |
-| `nodename`              | IBM Integration Bus integration node name                           | `IIB_NODE`                                        |
-| `servername`              | IBM Integration Bus integration server name                           | `IIB_SERVER`                                        |
+| `service.type`                   | Kubernetes service type for exposing ports       | `*tokenized*`                                  |
+| `resources.limits.cpu`          | Kubernetes CPU limit for the IIB container | `*tokenized*`                                                   |
+| `resources.limits.memory`       | Kubernetes memory limit for the IIB container | `*tokenized*`                                              |
+| `resources.requests.cpu`        | Kubernetes CPU request for the IIB container | `*tokenized*`                                                 |
+| `resources.requests.memory`     | Kubernetes memory request for the IIB container | `*tokenized*`                                            |
+| `nodename`              | IBM Integration Bus integration node name                           | `*tokenized*`                                        |
+| `servername`              | IBM Integration Bus integration server name                           | `*tokenized*`                                        |
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
