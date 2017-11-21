@@ -38,4 +38,5 @@ service:
   webuiPort: @@@iib.httplistener.port@@@  
   serverlistenerPort: @@@iib.serverlistener.port@@@
   nodelistenerPort: @@@iib.nodelistener.port@@@
+  ucdPort: 7918
   replicas: 1
