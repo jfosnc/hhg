@@ -30,6 +30,10 @@ spec:
   - port: {{ .Values.service.nodelistenerPort }}
     targetPort: {{ .Values.service.nodelistenerPort }}
     protocol: TCP
-    name: nodelistener       
+    name: nodelistener
+  - port: {{ .Values.service.ucdPort }}
+    targetPort: {{ .Values.service.ucdPort }}
+    protocol: TCP
+    name: ucdagent  
   selector:
     app: {{ template "fullname" . }}
