@@ -39,6 +39,8 @@ spec:
           name: nodelistener
         - containerPort: {{ .Values.service.webuiPort }}
           name: webui
+        - containerPort: {{ .Values.service.ucdPort }}
+          name: ucdagent
         env:
         -
          name : LICENSE
